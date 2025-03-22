@@ -7,10 +7,21 @@
     <title>Pokedex App</title>
   </head>
   <body>
-    <input type="text" id="pokemonName" placeholder="Enter Pokemon name..." />
+    <h1>Pokedex App</h1>
+    
+    <input type="text" id="pokemonSearchName" placeholder="Enter Pokemon name..." />
     <button onclick="fetchPokemon()">Fetch Pokemon</button><br />
 
-    <img src="" alt="Pokemon Sprite" id="pokemonSprite" style="display: none" />
+    <h2 id="pokemonDisplayName"></h2><br />
+
+    <img src="" alt="Pokemon Sprite" id="pokemonSpriteNormal" style="display: none" />
+    <img src="" alt="Pokemon Shiny Sprite" id="pokemonSpriteShiny" style="display: none" /><br />
+    
+    <h3 id="pokemonDisplayType" style="display: none">Type</h3>
+    <ul id="pokemonType"></ul><br />
+
+    <h3 id="pokemonDisplayAbilities" style="display: none">Abilities</h3>
+    <ul id="pokemonAbilities"></ul><br />
 
     <script src="assets/script.js"></script>
   </body>
